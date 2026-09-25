@@ -1,0 +1,488 @@
+:root {
+  --tax-navy: #0a2342;
+  --tax-dark: #071a31;
+  --tax-gold: #d6a84f;
+  --tax-light-gold: #f8f1df;
+  --tax-light: #f6f8fb;
+  --tax-text: #5d6875;
+  --tax-border: #e3e8ef;
+}
+
+
+/* ================= HERO ================= */
+
+.income-tax-hero {
+  padding: 90px 0;
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(214, 168, 79, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #f7f9fc, #ffffff);
+}
+
+.income-tax-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 50px;
+  background: var(--tax-light-gold);
+  color: var(--tax-navy);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.income-tax-badge i {
+  color: var(--tax-gold);
+}
+
+.income-tax-hero h1 {
+  color: var(--tax-navy);
+  font-size: clamp(42px, 5vw, 65px);
+  line-height: 1.08;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.income-tax-hero h1 span {
+  color: var(--tax-gold);
+}
+
+.income-tax-hero p {
+  max-width: 650px;
+  color: var(--tax-text);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+/* HERO BUTTONS */
+
+.income-tax-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.income-tax-main-btn,
+.income-tax-second-btn {
+  padding: 14px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.income-tax-main-btn {
+  background: var(--tax-navy);
+  color: white;
+}
+
+.income-tax-main-btn:hover {
+  background: var(--tax-gold);
+  color: white;
+}
+
+.income-tax-second-btn {
+  border: 1px solid var(--tax-navy);
+  color: var(--tax-navy);
+}
+
+.income-tax-second-btn:hover {
+  background: var(--tax-navy);
+  color: white;
+}
+
+
+/* HERO CARD */
+
+.income-tax-hero-card {
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 20px 55px rgba(10, 35, 66, 0.12);
+}
+
+.income-tax-card-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tax-light-gold);
+  color: var(--tax-gold);
+  border-radius: 14px;
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.income-tax-hero-card h3 {
+  color: var(--tax-navy);
+  font-size: 26px;
+  font-weight: 750;
+}
+
+.income-tax-hero-card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.income-tax-point {
+  color: var(--tax-navy);
+  font-weight: 600;
+  margin: 13px 0;
+}
+
+.income-tax-point i {
+  color: #198754;
+  margin-right: 8px;
+}
+
+
+/* ================= HEADING ================= */
+
+.income-tax-heading {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.income-tax-heading > span {
+  color: var(--tax-gold);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.income-tax-heading h2 {
+  color: var(--tax-navy);
+  font-size: 44px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.income-tax-heading h2 strong {
+  color: var(--tax-gold);
+}
+
+.income-tax-heading p {
+  color: var(--tax-text);
+  line-height: 1.7;
+}
+
+
+/* ================= SERVICES ================= */
+
+.income-tax-services {
+  padding: 95px 0;
+  background: white;
+}
+
+.income-tax-service-card {
+  height: 100%;
+  padding: 32px;
+  border: 1px solid var(--tax-border);
+  border-radius: 16px;
+  background: white;
+  transition: 0.3s;
+  position: relative;
+}
+
+.income-tax-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(10, 35, 66, 0.09);
+  border-color: rgba(214, 168, 79, 0.5);
+}
+
+.income-tax-service-card.featured {
+  border-top: 4px solid var(--tax-gold);
+}
+
+.income-tax-service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.income-tax-service-top > span {
+  color: #e1e6ec;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.income-tax-service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tax-light-gold);
+  color: var(--tax-gold);
+  border-radius: 14px;
+  font-size: 25px;
+}
+
+.income-tax-service-card h3 {
+  color: var(--tax-navy);
+  font-size: 23px;
+  font-weight: 750;
+  margin-bottom: 13px;
+}
+
+.income-tax-service-card > p {
+  color: var(--tax-text);
+  line-height: 1.7;
+  min-height: 100px;
+}
+
+.income-tax-list {
+  margin: 20px 0;
+}
+
+.income-tax-list div {
+  color: var(--tax-navy);
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.income-tax-list i {
+  color: #198754;
+  margin-right: 8px;
+}
+
+.income-tax-service-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 13px 16px;
+  background: var(--tax-navy);
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.income-tax-service-btn:hover {
+  background: var(--tax-gold);
+  color: white;
+}
+
+
+/* ================= WHY US ================= */
+
+.income-tax-why {
+  padding: 95px 0;
+  background: var(--tax-light);
+}
+
+.income-tax-why-card {
+  height: 100%;
+  padding: 30px;
+  background: white;
+  border: 1px solid var(--tax-border);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.income-tax-why-card > div {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: var(--tax-light-gold);
+  color: var(--tax-gold);
+  font-size: 23px;
+}
+
+.income-tax-why-card h3 {
+  color: var(--tax-navy);
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.income-tax-why-card p {
+  color: var(--tax-text);
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+
+/* ================= PROCESS ================= */
+
+.income-tax-process {
+  padding: 95px 0;
+  background: white;
+}
+
+.income-tax-step {
+  height: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  border: 1px solid var(--tax-border);
+  border-radius: 14px;
+  position: relative;
+}
+
+.income-tax-step > span {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  color: #e5e9ee;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.income-tax-step i {
+  display: block;
+  color: var(--tax-gold);
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+.income-tax-step h3 {
+  color: var(--tax-navy);
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.income-tax-step p {
+  color: var(--tax-text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ================= CTA ================= */
+
+.income-tax-cta {
+  padding: 80px 0;
+  background: white;
+}
+
+.income-tax-cta-box {
+  padding: 50px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--tax-navy),
+    #12345d
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.income-tax-cta-box span {
+  color: var(--tax-gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.income-tax-cta-box h2 {
+  color: white;
+  font-size: 38px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.income-tax-cta-box h2 strong {
+  color: var(--tax-gold);
+}
+
+.income-tax-cta-box p {
+  color: #cbd4df;
+  margin: 0;
+}
+
+.income-tax-cta-btn {
+  padding: 15px 22px;
+  background: var(--tax-gold);
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.income-tax-cta-btn:hover {
+  background: white;
+  color: var(--tax-navy);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+  .income-tax-hero-card {
+    margin-top: 25px;
+  }
+
+  .income-tax-cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .income-tax-hero {
+    padding: 60px 0;
+  }
+
+  .income-tax-hero h1 {
+    font-size: 42px;
+  }
+
+  .income-tax-hero p {
+    font-size: 16px;
+  }
+
+  .income-tax-heading h2 {
+    font-size: 34px;
+  }
+
+  .income-tax-services,
+  .income-tax-why,
+  .income-tax-process {
+    padding: 70px 0;
+  }
+
+  .income-tax-service-card > p {
+    min-height: auto;
+  }
+
+  .income-tax-cta {
+    padding: 60px 0;
+  }
+
+  .income-tax-cta-box {
+    padding: 35px 25px;
+  }
+
+  .income-tax-cta-box h2 {
+    font-size: 30px;
+  }
+
+  .income-tax-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}

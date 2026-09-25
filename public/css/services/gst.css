@@ -1,0 +1,548 @@
+:root {
+  --gst-navy: #0a2342;
+  --gst-dark: #071a31;
+  --gst-gold: #d6a84f;
+  --gst-light-gold: #f8f1df;
+  --gst-light: #f6f8fb;
+  --gst-text: #5d6875;
+  --gst-border: #e3e8ef;
+}
+
+
+/* ================= HERO ================= */
+
+.gst-hero {
+  padding: 90px 0;
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(214, 168, 79, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #f7f9fc, #ffffff);
+}
+
+.gst-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 50px;
+  background: var(--gst-light-gold);
+  color: var(--gst-navy);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.gst-badge i {
+  color: var(--gst-gold);
+}
+
+.gst-hero h1 {
+  color: var(--gst-navy);
+  font-size: clamp(42px, 5vw, 65px);
+  line-height: 1.08;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.gst-hero h1 span {
+  color: var(--gst-gold);
+}
+
+.gst-hero p {
+  max-width: 650px;
+  color: var(--gst-text);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.gst-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.gst-main-btn,
+.gst-second-btn {
+  padding: 14px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.gst-main-btn {
+  background: var(--gst-navy);
+  color: white;
+}
+
+.gst-main-btn:hover {
+  background: var(--gst-gold);
+  color: white;
+}
+
+.gst-second-btn {
+  border: 1px solid var(--gst-navy);
+  color: var(--gst-navy);
+}
+
+.gst-second-btn:hover {
+  background: var(--gst-navy);
+  color: white;
+}
+
+
+/* ================= HERO CARD ================= */
+
+.gst-hero-card {
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 20px 55px rgba(10, 35, 66, 0.12);
+}
+
+.gst-card-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--gst-light-gold);
+  color: var(--gst-gold);
+
+  border-radius: 14px;
+  font-size: 27px;
+
+  margin-bottom: 20px;
+}
+
+.gst-hero-card h3 {
+  color: var(--gst-navy);
+  font-size: 26px;
+  font-weight: 750;
+}
+
+.gst-hero-card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.gst-point {
+  color: var(--gst-navy);
+  font-weight: 600;
+  margin: 13px 0;
+}
+
+.gst-point i {
+  color: #198754;
+  margin-right: 8px;
+}
+
+
+/* ================= HEADING ================= */
+
+.gst-heading {
+  max-width: 720px;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.gst-heading > span {
+  color: var(--gst-gold);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.gst-heading h2 {
+  color: var(--gst-navy);
+  font-size: 44px;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.gst-heading h2 strong {
+  color: var(--gst-gold);
+}
+
+.gst-heading p {
+  color: var(--gst-text);
+  line-height: 1.7;
+}
+
+
+/* ================= SERVICES ================= */
+
+.gst-services {
+  padding: 95px 0;
+  background: white;
+}
+
+.gst-service-card {
+  height: 100%;
+  padding: 32px;
+
+  border: 1px solid var(--gst-border);
+  border-radius: 16px;
+
+  background: white;
+
+  transition: 0.3s;
+}
+
+.gst-service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(10, 35, 66, 0.09);
+  border-color: rgba(214, 168, 79, 0.5);
+}
+
+.gst-service-card.featured {
+  border-top: 4px solid var(--gst-gold);
+}
+
+.gst-service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+}
+
+.gst-service-top > span {
+  color: #e1e6ec;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.gst-service-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--gst-light-gold);
+  color: var(--gst-gold);
+
+  border-radius: 14px;
+  font-size: 25px;
+}
+
+.gst-service-card h3 {
+  color: var(--gst-navy);
+  font-size: 23px;
+  font-weight: 750;
+
+  margin-bottom: 13px;
+}
+
+.gst-service-card > p {
+  color: var(--gst-text);
+  line-height: 1.7;
+
+  min-height: 100px;
+}
+
+
+/* ================= LIST ================= */
+
+.gst-list {
+  margin: 20px 0;
+}
+
+.gst-list div {
+  color: var(--gst-navy);
+  font-size: 14px;
+
+  margin: 12px 0;
+}
+
+.gst-list i {
+  color: #198754;
+  margin-right: 8px;
+}
+
+
+/* ================= SERVICE BUTTON ================= */
+
+.gst-service-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 25px;
+  padding: 13px 16px;
+
+  background: var(--gst-navy);
+  color: white;
+
+  text-decoration: none;
+  border-radius: 7px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.gst-service-btn:hover {
+  background: var(--gst-gold);
+  color: white;
+}
+
+
+/* ================= WHY ================= */
+
+.gst-why {
+  padding: 95px 0;
+  background: var(--gst-light);
+}
+
+.gst-why-card {
+  height: 100%;
+
+  padding: 30px;
+
+  background: white;
+
+  border: 1px solid var(--gst-border);
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.gst-why-card > div {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: var(--gst-light-gold);
+  color: var(--gst-gold);
+
+  font-size: 23px;
+}
+
+.gst-why-card h3 {
+  color: var(--gst-navy);
+
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.gst-why-card p {
+  color: var(--gst-text);
+
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+
+/* ================= PROCESS ================= */
+
+.gst-process {
+  padding: 95px 0;
+  background: white;
+}
+
+.gst-step {
+  height: 100%;
+
+  text-align: center;
+
+  padding: 30px 20px;
+
+  border: 1px solid var(--gst-border);
+  border-radius: 14px;
+
+  position: relative;
+}
+
+.gst-step > span {
+  position: absolute;
+
+  top: 12px;
+  right: 18px;
+
+  color: #e5e9ee;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.gst-step i {
+  display: block;
+
+  color: var(--gst-gold);
+
+  font-size: 30px;
+
+  margin: 20px 0;
+}
+
+.gst-step h3 {
+  color: var(--gst-navy);
+
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.gst-step p {
+  color: var(--gst-text);
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* ================= CTA ================= */
+
+.gst-cta {
+  padding: 80px 0;
+  background: white;
+}
+
+.gst-cta-box {
+  padding: 50px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--gst-navy),
+      #12345d
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.gst-cta-box span {
+  color: var(--gst-gold);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.gst-cta-box h2 {
+  color: white;
+
+  font-size: 38px;
+  font-weight: 800;
+
+  margin: 12px 0;
+}
+
+.gst-cta-box h2 strong {
+  color: var(--gst-gold);
+}
+
+.gst-cta-box p {
+  color: #cbd4df;
+  margin: 0;
+}
+
+.gst-cta-btn {
+  padding: 15px 22px;
+
+  background: var(--gst-gold);
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 7px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.gst-cta-btn:hover {
+  background: white;
+  color: var(--gst-navy);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+  .gst-hero-card {
+    margin-top: 25px;
+  }
+
+  .gst-cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .gst-hero {
+    padding: 60px 0;
+  }
+
+  .gst-hero h1 {
+    font-size: 42px;
+  }
+
+  .gst-hero p {
+    font-size: 16px;
+  }
+
+  .gst-heading h2 {
+    font-size: 34px;
+  }
+
+  .gst-services,
+  .gst-why,
+  .gst-process {
+    padding: 70px 0;
+  }
+
+  .gst-service-card > p {
+    min-height: auto;
+  }
+
+  .gst-cta {
+    padding: 60px 0;
+  }
+
+  .gst-cta-box {
+    padding: 35px 25px;
+  }
+
+  .gst-cta-box h2 {
+    font-size: 30px;
+  }
+
+  .gst-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}

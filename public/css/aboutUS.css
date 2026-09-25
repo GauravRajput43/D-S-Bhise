@@ -1,0 +1,716 @@
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+:root {
+  --about-primary: #0b2d4d;
+  --about-secondary: #c89b3c;
+  --about-light: #f6f8fa;
+  --about-dark: #102030;
+  --about-text: #64748b;
+}
+
+
+/* =========================================
+   COMMON
+========================================= */
+
+.about-section-label {
+  color: var(--about-secondary);
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-heading {
+  max-width: 720px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.about-heading h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 4vw, 52px);
+  line-height: 1.15;
+  color: var(--about-dark);
+  margin-bottom: 20px;
+}
+
+.about-heading p {
+  color: var(--about-text);
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.about-hero {
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(6, 27, 47, .97),
+      rgba(6, 27, 47, .82),
+      rgba(6, 27, 47, .45)
+    ),
+    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=85");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.about-hero-content {
+  max-width: 760px;
+  color: white;
+}
+
+.about-label {
+  color: var(--about-secondary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.about-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.about-hero p {
+  max-width: 680px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #dbe5ed;
+}
+
+.about-hero-buttons {
+  margin-top: 35px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 28px;
+
+  text-decoration: none;
+  border-radius: 4px;
+
+  font-weight: 600;
+
+  transition: .3s;
+}
+
+.about-btn-gold {
+  background: var(--about-secondary);
+  color: white;
+  border: 1px solid var(--about-secondary);
+}
+
+.about-btn-gold:hover {
+  background: #b2862f;
+  border-color: #b2862f;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.about-btn-outline {
+  color: white;
+  border: 1px solid rgba(255,255,255,.5);
+}
+
+.about-btn-outline:hover {
+  background: white;
+  color: var(--about-primary);
+}
+
+
+/* =========================================
+   STORY
+========================================= */
+
+.about-story {
+  padding: 110px 0;
+}
+
+.about-story-image {
+  position: relative;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 520px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+}
+
+.about-experience {
+  position: absolute;
+
+  right: -25px;
+  bottom: -35px;
+
+  width: 190px;
+
+  padding: 30px;
+
+  background: var(--about-primary);
+  color: white;
+
+  box-shadow: 0 20px 45px rgba(0,0,0,.18);
+}
+
+.about-experience strong {
+  display: block;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 48px;
+
+  color: var(--about-secondary);
+}
+
+.about-experience span {
+  line-height: 1.5;
+}
+
+.about-story-content {
+  padding-left: 40px;
+}
+
+.about-story-content h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(36px, 4vw, 52px);
+
+  line-height: 1.15;
+
+  margin-bottom: 25px;
+}
+
+.about-story-content p {
+  color: var(--about-text);
+
+  line-height: 1.85;
+
+  margin-bottom: 18px;
+}
+
+.about-signature {
+  margin-top: 30px;
+}
+
+.about-signature strong {
+  display: block;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 22px;
+}
+
+.about-signature span {
+  color: var(--about-text);
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.about-stats {
+  padding: 65px 0;
+
+  background: var(--about-primary);
+
+  color: white;
+}
+
+.about-stat {
+  text-align: center;
+
+  padding: 20px;
+
+  border-right: 1px solid rgba(255,255,255,.15);
+}
+
+.about-stat i {
+  display: block;
+
+  color: var(--about-secondary);
+
+  font-size: 25px;
+
+  margin-bottom: 12px;
+}
+
+.about-stat strong {
+  display: block;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 42px;
+}
+
+.about-stat span {
+  color: #b8c8d5;
+
+  font-size: 14px;
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.about-values {
+  padding: 110px 0;
+
+  background: var(--about-light);
+}
+
+.about-value-card {
+  height: 100%;
+
+  padding: 40px 32px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid #e8edf1;
+
+  transition: .35s;
+}
+
+.about-value-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 4px;
+  height: 0;
+
+  background: var(--about-secondary);
+
+  transition: .35s;
+}
+
+.about-value-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 45px rgba(0,0,0,.08);
+}
+
+.about-value-card:hover::before {
+  height: 100%;
+}
+
+.about-value-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 50%;
+
+  background: #f1eadc;
+
+  color: var(--about-secondary);
+
+  font-size: 23px;
+}
+
+.about-value-card h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 24px;
+
+  margin-bottom: 15px;
+}
+
+.about-value-card p {
+  color: var(--about-text);
+
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   JOURNEY
+========================================= */
+
+.about-journey {
+  padding: 110px 0;
+}
+
+.about-timeline {
+  position: relative;
+
+  max-width: 900px;
+
+  margin: 60px auto 0;
+}
+
+.about-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+
+  background: #d8dee4;
+
+  transform: translateX(-50%);
+}
+
+.about-timeline-item {
+  width: 50%;
+
+  position: relative;
+
+  padding: 0 45px 55px;
+}
+
+.about-timeline-item:nth-child(even) {
+  margin-left: 50%;
+}
+
+.about-timeline-dot {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  top: 5px;
+
+  background: var(--about-secondary);
+
+  border: 4px solid white;
+
+  box-shadow: 0 0 0 1px var(--about-secondary);
+
+  border-radius: 50%;
+}
+
+.about-timeline-item:nth-child(odd)
+.about-timeline-dot {
+  right: -8px;
+}
+
+.about-timeline-item:nth-child(even)
+.about-timeline-dot {
+  left: -8px;
+}
+
+.about-timeline-item > span {
+  display: block;
+
+  color: var(--about-secondary);
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 8px;
+}
+
+.about-timeline-item h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 25px;
+
+  margin-bottom: 12px;
+}
+
+.about-timeline-item p {
+  color: var(--about-text);
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   EXPERTISE
+========================================= */
+
+.about-expertise {
+  padding: 110px 0;
+
+  background: var(--about-light);
+}
+
+.about-expertise-card {
+  min-height: 250px;
+
+  padding: 35px;
+
+  background: white;
+
+  border: 1px solid #e5e9ed;
+
+  transition: .3s;
+}
+
+.about-expertise-card:hover {
+  background: var(--about-primary);
+
+  color: white;
+
+  transform: translateY(-7px);
+}
+
+.about-expertise-card i {
+  display: block;
+
+  color: var(--about-secondary);
+
+  font-size: 28px;
+
+  margin-bottom: 22px;
+}
+
+.about-expertise-card h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 23px;
+
+  margin-bottom: 12px;
+}
+
+.about-expertise-card p {
+  color: var(--about-text);
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+.about-expertise-card:hover p {
+  color: #cbd8e2;
+}
+
+
+/* =========================================
+   TEAM
+========================================= */
+
+.about-team {
+  padding: 110px 0;
+}
+
+.about-team-card {
+  overflow: hidden;
+
+  background: white;
+
+  border: 1px solid #e8ebee;
+}
+
+.about-team-card img {
+  width: 100%;
+  height: 390px;
+
+  object-fit: cover;
+
+  filter: grayscale(15%);
+
+  transition: .4s;
+}
+
+.about-team-card:hover img {
+  transform: scale(1.04);
+}
+
+.about-team-info {
+  padding: 25px;
+}
+
+.about-team-info h3 {
+  font-family: "Playfair Display", serif;
+
+  font-size: 24px;
+
+  margin-bottom: 5px;
+}
+
+.about-team-info span {
+  color: var(--about-secondary);
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.about-cta {
+  padding: 90px 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8,36,61,.98),
+      rgba(8,36,61,.90)
+    ),
+    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1800&q=80");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+.about-cta h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(35px, 4vw, 52px);
+
+  margin-bottom: 15px;
+}
+
+.about-cta p {
+  max-width: 650px;
+
+  margin: 0 auto 30px;
+
+  color: #cbd8e2;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .about-story-content {
+    padding-left: 0;
+
+    margin-top: 30px;
+  }
+
+  .about-experience {
+    right: 15px;
+  }
+
+  .about-stat {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .about-hero {
+    min-height: 560px;
+  }
+
+  .about-story,
+  .about-values,
+  .about-journey,
+  .about-expertise,
+  .about-team {
+    padding: 75px 0;
+  }
+
+  .about-story-image img {
+    height: 400px;
+  }
+
+  .about-experience {
+    right: 10px;
+    bottom: -30px;
+  }
+
+  .about-timeline::before {
+    left: 8px;
+  }
+
+  .about-timeline-item,
+  .about-timeline-item:nth-child(even) {
+    width: 100%;
+
+    margin-left: 0;
+
+    padding-left: 40px;
+
+    padding-right: 0;
+  }
+
+  .about-timeline-item:nth-child(odd)
+  .about-timeline-dot,
+  .about-timeline-item:nth-child(even)
+  .about-timeline-dot {
+    left: 0;
+    right: auto;
+  }
+
+  .about-hero-buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .about-btn {
+    width: 100%;
+  }
+
+}
+

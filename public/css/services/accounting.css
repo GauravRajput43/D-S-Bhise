@@ -1,0 +1,481 @@
+:root {
+  --accounting-navy: #0a2342;
+  --accounting-gold: #d6a84f;
+  --accounting-light-gold: #f8f1df;
+  --accounting-light: #f6f8fb;
+  --accounting-text: #5d6875;
+  --accounting-border: #e3e8ef;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.accounting-hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      #0a2342 0%,
+      #0a2342f5 55%,
+      #0a2342cc 100%
+    );
+  position: relative;
+  overflow: hidden;
+}
+
+.accounting-hero::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border: 1px solid #d6a84f55;
+  border-radius: 50%;
+  right: -120px;
+  top: 30px;
+}
+
+.accounting-hero-content {
+  max-width: 750px;
+  padding: 80px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.accounting-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px;
+  border: 1px solid #d6a84f88;
+  color: var(--accounting-gold);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.accounting-hero h1 {
+  color: #fff;
+  font-size: 52px;
+  line-height: 1.15;
+  margin: 25px 0 20px;
+  font-weight: 700;
+}
+
+.accounting-hero h1 span {
+  color: var(--accounting-gold);
+}
+
+.accounting-hero p {
+  max-width: 650px;
+  color: #dce4ed;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.accounting-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.accounting-primary-btn,
+.accounting-secondary-btn {
+  text-decoration: none;
+  padding: 13px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.accounting-primary-btn {
+  background: var(--accounting-gold);
+  color: var(--accounting-navy);
+}
+
+.accounting-primary-btn:hover {
+  background: #fff;
+  color: var(--accounting-navy);
+}
+
+.accounting-secondary-btn {
+  border: 1px solid #ffffff55;
+  color: #fff;
+}
+
+.accounting-secondary-btn:hover {
+  background: #fff;
+  color: var(--accounting-navy);
+}
+
+
+/* =========================
+   COMMON HEADING
+========================= */
+
+.accounting-heading {
+  max-width: 750px;
+  margin: 0 auto 55px;
+}
+
+.accounting-heading span {
+  color: var(--accounting-gold);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.accounting-heading h2 {
+  color: var(--accounting-navy);
+  font-size: 36px;
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.accounting-heading p {
+  color: var(--accounting-text);
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.accounting-services {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.accounting-service-card {
+  height: 100%;
+  padding: 30px;
+  border: 1px solid var(--accounting-border);
+  border-radius: 10px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.accounting-service-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--accounting-gold);
+  box-shadow: 0 15px 35px #0a234214;
+}
+
+.accounting-service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accounting-service-top > span {
+  color: #b8c0c9;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.accounting-service-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--accounting-light-gold);
+  color: var(--accounting-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 25px;
+}
+
+.accounting-service-card h3 {
+  color: var(--accounting-navy);
+  font-size: 22px;
+  margin: 25px 0 12px;
+}
+
+.accounting-service-card p {
+  color: var(--accounting-text);
+  line-height: 1.7;
+}
+
+.accounting-list {
+  padding: 0;
+  margin: 22px 0;
+  list-style: none;
+}
+
+.accounting-list li {
+  color: #4f5c6b;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.accounting-list i {
+  color: var(--accounting-gold);
+  margin-right: 8px;
+}
+
+.accounting-service-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accounting-navy);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.accounting-service-btn:hover {
+  color: var(--accounting-gold);
+}
+
+
+/* =========================
+   BUSINESS TYPES
+========================= */
+
+.accounting-business {
+  padding: 90px 0;
+  background: var(--accounting-light);
+}
+
+.accounting-business-card {
+  height: 100%;
+  padding: 35px 30px;
+  background: #fff;
+  border: 1px solid var(--accounting-border);
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.accounting-business-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px #0a234210;
+}
+
+.accounting-business-icon {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accounting-light-gold);
+  color: var(--accounting-gold);
+  font-size: 25px;
+}
+
+.accounting-business-card h3 {
+  color: var(--accounting-navy);
+  font-size: 21px;
+  margin: 20px 0 10px;
+}
+
+.accounting-business-card p {
+  color: var(--accounting-text);
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.accounting-why {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.accounting-why-card {
+  height: 100%;
+  padding: 30px 25px;
+  text-align: center;
+  border: 1px solid var(--accounting-border);
+  border-radius: 10px;
+}
+
+.accounting-why-card i {
+  color: var(--accounting-gold);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.accounting-why-card h3 {
+  color: var(--accounting-navy);
+  font-size: 19px;
+}
+
+.accounting-why-card p {
+  color: var(--accounting-text);
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.accounting-process {
+  padding: 90px 0;
+  background: var(--accounting-light);
+}
+
+.accounting-step {
+  height: 100%;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid var(--accounting-border);
+}
+
+.accounting-step-number {
+  color: var(--accounting-gold);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.accounting-step h3 {
+  color: var(--accounting-navy);
+  font-size: 20px;
+}
+
+.accounting-step p {
+  color: var(--accounting-text);
+  line-height: 1.7;
+  margin: 10px 0 0;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.accounting-cta {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.accounting-cta-box {
+  background: var(--accounting-navy);
+  padding: 55px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.accounting-cta-box span {
+  color: var(--accounting-gold);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.accounting-cta-box h2 {
+  color: #fff;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.accounting-cta-box p {
+  color: #cbd5df;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.accounting-cta-btn {
+  flex-shrink: 0;
+  background: var(--accounting-gold);
+  color: var(--accounting-navy);
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.accounting-cta-btn:hover {
+  background: #fff;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+  .accounting-hero h1 {
+    font-size: 43px;
+  }
+
+  .accounting-cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .accounting-hero {
+    min-height: auto;
+  }
+
+  .accounting-hero-content {
+    padding: 65px 0;
+  }
+
+  .accounting-hero h1 {
+    font-size: 36px;
+  }
+
+  .accounting-hero p {
+    font-size: 15px;
+  }
+
+  .accounting-heading h2 {
+    font-size: 29px;
+  }
+
+  .accounting-services,
+  .accounting-business,
+  .accounting-why,
+  .accounting-process {
+    padding: 65px 0;
+  }
+
+  .accounting-cta {
+    padding: 60px 0;
+  }
+
+  .accounting-cta-box {
+    padding: 35px 25px;
+  }
+
+  .accounting-cta-box h2 {
+    font-size: 27px;
+  }
+
+  .accounting-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .accounting-primary-btn,
+  .accounting-secondary-btn {
+    text-align: center;
+  }
+
+}

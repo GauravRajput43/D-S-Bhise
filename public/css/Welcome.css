@@ -1,0 +1,435 @@
+
+/* ================= SUCCESS PAGE ================= */
+
+.success-page {
+  min-height: calc(100vh - 80px);
+
+  padding: 80px 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(214, 168, 79, 0.12),
+      transparent 35%
+    ),
+    #f6f8fb;
+}
+
+
+/* ================= CARD ================= */
+
+.success-card {
+  width: 100%;
+
+  max-width: 850px;
+
+  padding: 55px 60px;
+
+  background: #ffffff;
+
+  border-radius: 22px;
+
+  text-align: center;
+
+  box-shadow:
+    0 20px 60px rgba(10, 35, 66, 0.10);
+}
+
+
+/* ================= SUCCESS ICON ================= */
+
+.success-icon {
+  width: 82px;
+  height: 82px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #e8f7ee;
+
+  color: #198754;
+
+  font-size: 38px;
+
+  animation: successPop 0.5s ease;
+}
+
+@keyframes successPop {
+
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+
+/* ================= LABEL ================= */
+
+.success-label {
+  display: inline-block;
+
+  color: #d6a84f;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 10px;
+}
+
+
+/* ================= HEADING ================= */
+
+.success-card h1 {
+  color: #0a2342;
+
+  font-size: clamp(36px, 5vw, 54px);
+
+  line-height: 1.15;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+
+/* ================= MAIN MESSAGE ================= */
+
+.success-message {
+  max-width: 650px;
+
+  margin: 0 auto 18px;
+
+  color: #626b76;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* ================= CALLBACK MESSAGE ================= */
+
+.callback-message {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  padding: 18px 22px;
+
+  border-radius: 10px;
+
+  background: #f4f7fa;
+
+  color: #505a66;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+.callback-message i {
+  color: #d6a84f;
+
+  margin-right: 6px;
+}
+
+.callback-message strong {
+  color: #0a2342;
+}
+
+
+/* ================= NEXT STEP BOX ================= */
+
+.next-step-box {
+  margin-top: 35px;
+
+  padding: 25px;
+
+  border: 1px solid #e5e9ee;
+
+  border-radius: 14px;
+
+  text-align: left;
+}
+
+
+/* ================= EACH STEP ================= */
+
+.next-step {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 16px;
+
+  padding: 15px 0;
+}
+
+.next-step:not(:last-child) {
+  border-bottom: 1px solid #edf0f3;
+}
+
+
+/* ================= STEP ICON ================= */
+
+.step-icon {
+  min-width: 46px;
+
+  height: 46px;
+
+  border-radius: 10px;
+
+  background: #eef3f8;
+
+  color: #0a2342;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 18px;
+}
+
+
+/* ================= STEP CONTENT ================= */
+
+.next-step h5 {
+  margin: 0 0 4px;
+
+  color: #0a2342;
+
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.next-step p {
+  margin: 0;
+
+  color: #747d87;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ================= QUICK MESSAGE ================= */
+
+.quick-message {
+  margin-top: 25px;
+
+  padding: 14px 18px;
+
+  border-radius: 8px;
+
+  background: #fff8e9;
+
+  color: #766338;
+
+  font-size: 14px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.quick-message i {
+  color: #d6a84f;
+
+  font-size: 17px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.success-buttons {
+  margin-top: 30px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+
+/* HOME BUTTON */
+
+.home-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 13px 23px;
+
+  border-radius: 8px;
+
+  background: #0a2342;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #d6a84f;
+
+  color: #0a2342;
+
+  transform: translateY(-2px);
+}
+
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-success-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 13px 23px;
+
+  border-radius: 8px;
+
+  background: #e8f7ee;
+
+  color: #198754;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.whatsapp-success-btn:hover {
+  background: #198754;
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+
+/* ================= THANK YOU ================= */
+
+.thank-you-text {
+  margin-top: 35px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #edf0f3;
+
+  color: #7a838e;
+
+  font-size: 14px;
+}
+
+.thank-you-text i {
+  color: #d9534f;
+
+  margin-right: 5px;
+}
+
+.thank-you-text strong {
+  color: #0a2342;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+  .success-page {
+    padding: 45px 15px;
+  }
+
+  .success-card {
+    padding: 40px 22px;
+
+    border-radius: 16px;
+  }
+
+  .success-icon {
+    width: 70px;
+    height: 70px;
+
+    font-size: 30px;
+  }
+
+  .success-card h1 {
+    font-size: 36px;
+  }
+
+  .success-message {
+    font-size: 15px;
+  }
+
+  .callback-message {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .next-step-box {
+    padding: 15px;
+  }
+
+  .next-step {
+    gap: 12px;
+  }
+
+  .success-buttons {
+    flex-direction: column;
+  }
+
+  .home-btn,
+  .whatsapp-success-btn {
+    justify-content: center;
+
+    width: 100%;
+  }
+
+}

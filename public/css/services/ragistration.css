@@ -1,0 +1,653 @@
+:root {
+  --business-navy: #0a2342;
+  --business-gold: #d6a84f;
+  --business-light-gold: #f8f1df;
+  --business-light: #f6f8fb;
+  --business-text: #5d6875;
+  --business-border: #e3e8ef;
+}
+
+
+/* ================= HERO ================= */
+
+.business-hero {
+  padding: 90px 0;
+  background:
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(214, 168, 79, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(135deg, #f7f9fc, #ffffff);
+}
+
+.business-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 9px 16px;
+
+  border-radius: 50px;
+
+  background: var(--business-light-gold);
+  color: var(--business-navy);
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  margin-bottom: 20px;
+}
+
+.business-badge i {
+  color: var(--business-gold);
+}
+
+.business-hero h1 {
+  color: var(--business-navy);
+
+  font-size: clamp(42px, 5vw, 65px);
+  line-height: 1.08;
+
+  font-weight: 800;
+
+  margin-bottom: 22px;
+}
+
+.business-hero h1 span {
+  color: var(--business-gold);
+}
+
+.business-hero p {
+  max-width: 650px;
+
+  color: var(--business-text);
+
+  font-size: 18px;
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.business-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.business-main-btn,
+.business-second-btn {
+  padding: 14px 22px;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.business-main-btn {
+  background: var(--business-navy);
+  color: white;
+}
+
+.business-main-btn:hover {
+  background: var(--business-gold);
+  color: white;
+}
+
+.business-second-btn {
+  border: 1px solid var(--business-navy);
+  color: var(--business-navy);
+}
+
+.business-second-btn:hover {
+  background: var(--business-navy);
+  color: white;
+}
+
+
+/* ================= HERO CARD ================= */
+
+.business-hero-card {
+  padding: 35px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  box-shadow: 0 20px 55px rgba(10, 35, 66, 0.12);
+}
+
+.business-card-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--business-light-gold);
+  color: var(--business-gold);
+
+  border-radius: 14px;
+
+  font-size: 27px;
+
+  margin-bottom: 20px;
+}
+
+.business-hero-card h3 {
+  color: var(--business-navy);
+
+  font-size: 26px;
+  font-weight: 750;
+}
+
+.business-hero-card p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.business-point {
+  color: var(--business-navy);
+
+  font-weight: 600;
+
+  margin: 13px 0;
+}
+
+.business-point i {
+  color: #198754;
+  margin-right: 8px;
+}
+
+
+/* ================= HEADING ================= */
+
+.business-heading {
+  max-width: 720px;
+
+  text-align: center;
+
+  margin: 0 auto 50px;
+}
+
+.business-heading > span {
+  color: var(--business-gold);
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.business-heading h2 {
+  color: var(--business-navy);
+
+  font-size: 44px;
+  font-weight: 800;
+
+  margin: 12px 0;
+}
+
+.business-heading h2 strong {
+  color: var(--business-gold);
+}
+
+.business-heading p {
+  color: var(--business-text);
+
+  line-height: 1.7;
+}
+
+
+/* ================= SERVICES ================= */
+
+.business-services {
+  padding: 95px 0;
+  background: white;
+}
+
+.business-service-card {
+  height: 100%;
+
+  padding: 32px;
+
+  border: 1px solid var(--business-border);
+  border-radius: 16px;
+
+  background: white;
+
+  transition: 0.3s;
+}
+
+.business-service-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 18px 45px rgba(10, 35, 66, 0.09);
+
+  border-color: rgba(214, 168, 79, 0.5);
+}
+
+.business-service-card.featured {
+  border-top: 4px solid var(--business-gold);
+}
+
+.business-service-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 20px;
+}
+
+.business-service-top > span {
+  color: #e1e6ec;
+
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.business-service-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--business-light-gold);
+  color: var(--business-gold);
+
+  border-radius: 14px;
+
+  font-size: 25px;
+}
+
+.business-service-card h3 {
+  color: var(--business-navy);
+
+  font-size: 23px;
+  font-weight: 750;
+
+  margin-bottom: 13px;
+}
+
+.business-service-card > p {
+  color: var(--business-text);
+
+  line-height: 1.7;
+
+  min-height: 100px;
+}
+
+
+/* ================= LIST ================= */
+
+.business-list {
+  margin: 20px 0;
+}
+
+.business-list div {
+  color: var(--business-navy);
+
+  font-size: 14px;
+
+  margin: 12px 0;
+}
+
+.business-list i {
+  color: #198754;
+
+  margin-right: 8px;
+}
+
+
+/* ================= SERVICE BUTTON ================= */
+
+.business-service-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 25px;
+
+  padding: 13px 16px;
+
+  background: var(--business-navy);
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 7px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.business-service-btn:hover {
+  background: var(--business-gold);
+  color: white;
+}
+
+
+/* ================= STRUCTURE ================= */
+
+.business-structure {
+  padding: 95px 0;
+  background: var(--business-light);
+}
+
+.business-structure-card {
+  height: 100%;
+
+  padding: 32px;
+
+  background: white;
+
+  border: 1px solid var(--business-border);
+  border-radius: 15px;
+
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.business-structure-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(10, 35, 66, 0.08);
+}
+
+.business-structure-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: var(--business-light-gold);
+  color: var(--business-gold);
+
+  font-size: 24px;
+}
+
+.business-structure-card h3 {
+  color: var(--business-navy);
+
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.business-structure-card p {
+  color: var(--business-text);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ================= WHY ================= */
+
+.business-why {
+  padding: 95px 0;
+  background: white;
+}
+
+.business-why-card {
+  height: 100%;
+
+  padding: 30px;
+
+  background: white;
+
+  border: 1px solid var(--business-border);
+  border-radius: 14px;
+
+  text-align: center;
+}
+
+.business-why-card > div {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 18px;
+
+  border-radius: 50%;
+
+  background: var(--business-light-gold);
+  color: var(--business-gold);
+
+  font-size: 23px;
+}
+
+.business-why-card h3 {
+  color: var(--business-navy);
+
+  font-size: 20px;
+  font-weight: 750;
+}
+
+.business-why-card p {
+  color: var(--business-text);
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+
+/* ================= PROCESS ================= */
+
+.business-process {
+  padding: 95px 0;
+  background: var(--business-light);
+}
+
+.business-step {
+  height: 100%;
+
+  text-align: center;
+
+  padding: 30px 20px;
+
+  border: 1px solid var(--business-border);
+  border-radius: 14px;
+
+  background: white;
+
+  position: relative;
+}
+
+.business-step > span {
+  position: absolute;
+
+  top: 12px;
+  right: 18px;
+
+  color: #e5e9ee;
+
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.business-step i {
+  display: block;
+
+  color: var(--business-gold);
+
+  font-size: 30px;
+
+  margin: 20px 0;
+}
+
+.business-step h3 {
+  color: var(--business-navy);
+
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.business-step p {
+  color: var(--business-text);
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* ================= CTA ================= */
+
+.business-cta {
+  padding: 80px 0;
+  background: white;
+}
+
+.business-cta-box {
+  padding: 50px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    135deg,
+    var(--business-navy),
+    #12345d
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.business-cta-box span {
+  color: var(--business-gold);
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.business-cta-box h2 {
+  color: white;
+
+  font-size: 38px;
+  font-weight: 800;
+
+  margin: 12px 0;
+}
+
+.business-cta-box h2 strong {
+  color: var(--business-gold);
+}
+
+.business-cta-box p {
+  color: #cbd4df;
+
+  margin: 0;
+}
+
+.business-cta-btn {
+  padding: 15px 22px;
+
+  background: var(--business-gold);
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 7px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.business-cta-btn:hover {
+  background: white;
+  color: var(--business-navy);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+  .business-hero-card {
+    margin-top: 25px;
+  }
+
+  .business-cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .business-hero {
+    padding: 60px 0;
+  }
+
+  .business-hero h1 {
+    font-size: 42px;
+  }
+
+  .business-hero p {
+    font-size: 16px;
+  }
+
+  .business-heading h2 {
+    font-size: 34px;
+  }
+
+  .business-services,
+  .business-structure,
+  .business-why,
+  .business-process {
+    padding: 70px 0;
+  }
+
+  .business-service-card > p {
+    min-height: auto;
+  }
+
+  .business-cta {
+    padding: 60px 0;
+  }
+
+  .business-cta-box {
+    padding: 35px 25px;
+  }
+
+  .business-cta-box h2 {
+    font-size: 30px;
+  }
+
+  .business-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
